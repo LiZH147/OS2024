@@ -1,0 +1,549 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ASSERT	utility.h	76;"	d
+Acquire	synch-sem.cc	/^void Lock::Acquire() {$/;"	f	class:Lock
+Acquire	synch-sleep.cc	/^void Lock::Acquire() {$/;"	f	class:Lock
+Acquire	synch.cc	/^void Lock::Acquire() {$/;"	f	class:Lock
+Alloc	Table.cc	/^int Table::Alloc(void *object) { \/\/ add object to tableBase$/;"	f	class:Table
+Append	dllist.cc	/^void DLList::Append(void *item) {$/;"	f	class:DLList
+Append	list.cc	/^List::Append(void *item)$/;"	f	class:List
+Append	synchlist.cc	/^SynchList::Append(void *item)$/;"	f	class:SynchList
+BLOCKED	thread.h	/^enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED };$/;"	e	enum:ThreadStatus
+BoundedBuffer	BoundedBuffer.cc	/^BoundedBuffer::BoundedBuffer(int maxSize) {$/;"	f	class:BoundedBuffer
+BoundedBuffer	BoundedBuffer.h	/^class BoundedBuffer {$/;"	c
+BoundedBufferTest	threadtest.cc	/^void BoundedBufferTest(int which) {$/;"	f
+Broadcast	synch-sem.cc	/^void Condition::Broadcast(Lock* conditionLock) { \/\/ wakeup all threads that are blocked$/;"	f	class:Condition
+Broadcast	synch-sleep.cc	/^void Condition::Broadcast(Lock* conditionLock) { \/\/ wakeup all threads that are blocked$/;"	f	class:Condition
+Broadcast	synch.cc	/^void Condition::Broadcast(Lock* conditionLock) { \/\/ wakeup all threads that are blocked$/;"	f	class:Condition
+CFILES	Makefile	/^CFILES = $(THREAD_C)$/;"	m
+C_OFILES	Makefile	/^C_OFILES = $(THREAD_O)$/;"	m
+ChangeLevel	interrupt.cc	/^Interrupt::ChangeLevel(IntStatus old, IntStatus now)$/;"	f	class:Interrupt
+CheckIfDue	interrupt.cc	/^Interrupt::CheckIfDue(bool advanceClock)$/;"	f	class:Interrupt
+CheckOverflow	thread.cc	/^Thread::CheckOverflow()$/;"	f	class:Thread
+Cleanup	system.cc	/^Cleanup()$/;"	f
+Condition	synch-sem.cc	/^Condition::Condition(char* debugName) {$/;"	f	class:Condition
+Condition	synch-sem.h	/^class Condition {$/;"	c
+Condition	synch-sleep.cc	/^Condition::Condition(char* debugName) {$/;"	f	class:Condition
+Condition	synch-sleep.h	/^class Condition {$/;"	c
+Condition	synch.cc	/^Condition::Condition(char* debugName) {$/;"	f	class:Condition
+Condition	synch.h	/^class Condition {$/;"	c
+ConsoleReadInt	interrupt.h	/^enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, $/;"	e	enum:IntType
+ConsoleWriteInt	interrupt.h	/^enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, $/;"	e	enum:IntType
+DEBUG	utility.cc	/^DEBUG(char flag, char *format, ...)$/;"	f
+DEFINES	Makefile	/^DEFINES = -DTHREADS$/;"	m
+DEL	dllist.h	5;"	d
+DLLElement	dllist.cc	/^DLLElement::DLLElement(void *itemPtr, int sortKey) {$/;"	f	class:DLLElement
+DLLElement	dllist.h	/^class DLLElement {$/;"	c
+DLList	dllist.cc	/^DLList::DLList() {$/;"	f	class:DLList
+DLList	dllist.h	/^class DLList { $/;"	c
+DLListTest	threadtest.cc	/^void DLListTest(int which) {$/;"	f
+DLListTest1	threadtest.cc	/^void DLListTest1(int which) {$/;"	f
+DLListTest2	threadtest.cc	/^void DLListTest2(int which) {$/;"	f
+DLListTest3	threadtest.cc	/^void DLListTest3(int which) { \/\/ out of order$/;"	f
+DebugInit	utility.cc	/^DebugInit(char *flagList)$/;"	f
+DebugIsEnabled	utility.cc	/^DebugIsEnabled(char flag)$/;"	f
+DiskInt	interrupt.h	/^enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, $/;"	e	enum:IntType
+DumpState	interrupt.cc	/^Interrupt::DumpState()$/;"	f	class:Interrupt
+ENTRY	switch.c	/^	.EXPORT SWITCH,ENTRY,PRIV_LEV=3,RTNVAL=GR$/;"	v
+ENTRY	switch.c	/^	.EXPORT ThreadRoot,ENTRY,PRIV_LEV=3,RTNVAL=GR$/;"	v
+Enable	interrupt.cc	/^Interrupt::Enable()$/;"	f	class:Interrupt
+FALSE	bool.h	4;"	d
+FP	switch.h	37;"	d
+FP	switch.h	77;"	d
+FPState	switch.h	143;"	d
+FPState	switch.h	56;"	d
+FindNextToRun	scheduler.cc	/^Scheduler::FindNextToRun ()$/;"	f	class:Scheduler
+Finish	thread.cc	/^Thread::Finish ()$/;"	f	class:Thread
+Fork	thread.cc	/^Thread::Fork(VoidFunctionPtr func, int arg)$/;"	f	class:Thread
+Get	Table.cc	/^void *Table::Get(int index) { \/\/ return item on tableBase[index]$/;"	f	class:Table
+HFILES	Makefile	/^HFILES = $(THREAD_H)$/;"	m
+Halt	interrupt.cc	/^Interrupt::Halt()$/;"	f	class:Interrupt
+I0	switch.h	67;"	d
+I1	switch.h	68;"	d
+I2	switch.h	69;"	d
+I3	switch.h	70;"	d
+I4	switch.h	71;"	d
+I5	switch.h	72;"	d
+I6	switch.h	73;"	d
+I7	switch.h	74;"	d
+INCPATH	Makefile	/^INCPATH = -I..\/threads -I..\/machine$/;"	m
+INS	dllist.h	4;"	d
+INTERRUPT_H	interrupt.h	36;"	d
+Idle	interrupt.cc	/^Interrupt::Idle()$/;"	f	class:Interrupt
+IdleMode	interrupt.h	/^enum MachineStatus {IdleMode, SystemMode, UserMode};$/;"	e	enum:MachineStatus
+InitialArg	switch.c	/^	mov	InitialArg, %l1$/;"	v
+InitialArg	switch.h	117;"	d
+InitialArg	switch.h	150;"	d
+InitialArg	switch.h	51;"	d
+InitialArg	switch.h	82;"	d
+InitialArgState	switch.h	123;"	d
+InitialArgState	switch.h	145;"	d
+InitialArgState	switch.h	58;"	d
+InitialArgState	switch.h	88;"	d
+InitialPC	switch.c	/^	mov	InitialPC, %l0  $/;"	v
+InitialPC	switch.h	116;"	d
+InitialPC	switch.h	149;"	d
+InitialPC	switch.h	50;"	d
+InitialPC	switch.h	81;"	d
+InitialPCState	switch.h	122;"	d
+InitialPCState	switch.h	144;"	d
+InitialPCState	switch.h	57;"	d
+InitialPCState	switch.h	87;"	d
+Initialize	system.cc	/^Initialize(int argc, char **argv)$/;"	f
+InsertItem	dllist-driver.cc	/^void InsertItem(int which, DLList *dllist, int keyv) {$/;"	f
+IntOff	interrupt.h	/^enum IntStatus { IntOff, IntOn };$/;"	e	enum:IntStatus
+IntOn	interrupt.h	/^enum IntStatus { IntOff, IntOn };$/;"	e	enum:IntStatus
+IntStatus	interrupt.h	/^enum IntStatus { IntOff, IntOn };$/;"	g
+IntType	interrupt.h	/^enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, $/;"	g
+Interrupt	interrupt.cc	/^Interrupt::Interrupt()$/;"	f	class:Interrupt
+Interrupt	interrupt.h	/^class Interrupt {$/;"	c
+InterruptEnable	thread.cc	/^static void InterruptEnable() { interrupt->Enable(); }$/;"	f	file:
+IsEmpty	dllist.cc	/^bool DLList::IsEmpty() {$/;"	f	class:DLList
+IsEmpty	list.cc	/^List::IsEmpty() $/;"	f	class:List
+JUST_CREATED	thread.h	/^enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED };$/;"	e	enum:ThreadStatus
+LIST_H	list.h	14;"	d
+List	list.cc	/^List::List()$/;"	f	class:List
+List	list.h	/^class List {$/;"	c
+ListElement	list.cc	/^ListElement::ListElement(void *itemPtr, int sortKey)$/;"	f	class:ListElement
+ListElement	list.h	/^class ListElement {$/;"	c
+Lock	synch-sem.cc	/^Lock::Lock(char* debugName) {$/;"	f	class:Lock
+Lock	synch-sem.h	/^class Lock {$/;"	c
+Lock	synch-sleep.cc	/^Lock::Lock(char* debugName) {$/;"	f	class:Lock
+Lock	synch-sleep.h	/^class Lock {$/;"	c
+Lock	synch.cc	/^Lock::Lock(char* debugName) {$/;"	f	class:Lock
+Lock	synch.h	/^class Lock {$/;"	c
+MAIN	main.cc	49;"	d	file:
+MAIN	main.cc	51;"	d	file:
+MachineStateSize	thread.h	51;"	d
+MachineStatus	interrupt.h	/^enum MachineStatus {IdleMode, SystemMode, UserMode};$/;"	g
+Mapcar	list.cc	/^List::Mapcar(VoidFunctionPtr func)$/;"	f	class:List
+Mapcar	synchlist.cc	/^SynchList::Mapcar(VoidFunctionPtr func)$/;"	f	class:SynchList
+NUM_RANGE	dllist-driver.cc	4;"	d	file:
+NetworkRecvInt	interrupt.h	/^				NetworkSendInt, NetworkRecvInt};$/;"	e	enum:IntType
+NetworkSendInt	interrupt.h	/^				NetworkSendInt, NetworkRecvInt};$/;"	e	enum:IntType
+OneTick	interrupt.cc	/^Interrupt::OneTick()$/;"	f	class:Interrupt
+P	synch-sem.cc	/^Semaphore::P()$/;"	f	class:Semaphore
+P	synch-sleep.cc	/^Semaphore::P()$/;"	f	class:Semaphore
+P	synch.cc	/^Semaphore::P()$/;"	f	class:Semaphore
+PC	switch.h	113;"	d
+PC	switch.h	38;"	d
+PC	switch.h	78;"	d
+PCState	switch.h	121;"	d
+PCState	switch.h	142;"	d
+PCState	switch.h	55;"	d
+PCState	switch.h	86;"	d
+PRI	dllist.h	6;"	d
+PRIV_LEV	switch.c	/^	.EXPORT SWITCH,ENTRY,PRIV_LEV=3,RTNVAL=GR$/;"	v
+PRIV_LEV	switch.c	/^	.EXPORT ThreadRoot,ENTRY,PRIV_LEV=3,RTNVAL=GR$/;"	v
+PendingInterrupt	interrupt.cc	/^PendingInterrupt::PendingInterrupt(VoidFunctionPtr func, int param, int time, $/;"	f	class:PendingInterrupt
+PendingInterrupt	interrupt.h	/^class PendingInterrupt {$/;"	c
+Prepend	dllist.cc	/^void DLList::Prepend(void *item) {$/;"	f	class:DLList
+Prepend	list.cc	/^List::Prepend(void *item)$/;"	f	class:List
+Print	BoundedBuffer.cc	/^void BoundedBuffer::Print() {$/;"	f	class:BoundedBuffer
+Print	Table.cc	/^void Table::Print() {$/;"	f	class:Table
+Print	scheduler.cc	/^Scheduler::Print()$/;"	f	class:Scheduler
+Print	thread.h	/^        void Print() { printf("%s, ", name); }$/;"	f	class:Thread
+PrintList	dllist-driver.cc	/^void PrintList(int which, DLList* dllist) {$/;"	f
+PrintPending	interrupt.cc	/^PrintPending(int arg)$/;"	f	file:
+READY	thread.h	/^enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED };$/;"	e	enum:ThreadStatus
+RTNVAL	switch.c	/^	.EXPORT SWITCH,ENTRY,PRIV_LEV=3,RTNVAL=GR$/;"	v
+RTNVAL	switch.c	/^	.EXPORT ThreadRoot,ENTRY,PRIV_LEV=3,RTNVAL=GR$/;"	v
+RUNNING	thread.h	/^enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED };$/;"	e	enum:ThreadStatus
+Read	BoundedBuffer.cc	/^void BoundedBuffer::Read(void* data, int size) {$/;"	f	class:BoundedBuffer
+ReadyToRun	scheduler.cc	/^Scheduler::ReadyToRun (Thread *thread)$/;"	f	class:Scheduler
+Release	Table.cc	/^void Table::Release(int index) { \/\/ release item from tableBase$/;"	f	class:Table
+Release	synch-sem.cc	/^void Lock::Release() {$/;"	f	class:Lock
+Release	synch-sleep.cc	/^void Lock::Release() {$/;"	f	class:Lock
+Release	synch.cc	/^void Lock::Release() {$/;"	f	class:Lock
+Remove	dllist.cc	/^void *DLList::Remove(int *keyPtr) { \/\/ remove from head$/;"	f	class:DLList
+Remove	list.cc	/^List::Remove()$/;"	f	class:List
+Remove	synchlist.cc	/^SynchList::Remove()$/;"	f	class:SynchList
+RemoveItem	dllist-driver.cc	/^void RemoveItem(int which, DLList *dllist, int keyv)$/;"	f
+RestoreUserState	thread.cc	/^Thread::RestoreUserState()$/;"	f	class:Thread
+Run	scheduler.cc	/^Scheduler::Run (Thread *nextThread)$/;"	f	class:Scheduler
+S0	switch.h	29;"	d
+S0	switch.h	97;"	d
+S1	switch.h	30;"	d
+S1	switch.h	98;"	d
+S10	switch.h	107;"	d
+S11	switch.h	108;"	d
+S12	switch.h	109;"	d
+S13	switch.h	110;"	d
+S14	switch.h	111;"	d
+S15	switch.h	112;"	d
+S2	switch.h	31;"	d
+S2	switch.h	99;"	d
+S3	switch.h	100;"	d
+S3	switch.h	32;"	d
+S4	switch.h	101;"	d
+S4	switch.h	33;"	d
+S5	switch.h	102;"	d
+S5	switch.h	34;"	d
+S6	switch.h	103;"	d
+S6	switch.h	35;"	d
+S7	switch.h	104;"	d
+S7	switch.h	36;"	d
+S8	switch.h	105;"	d
+S9	switch.h	106;"	d
+SCHEDULER_H	scheduler.h	10;"	d
+SP	switch.h	28;"	d
+SP	switch.h	96;"	d
+STACK_FENCEPOST	thread.cc	23;"	d	file:
+SWITCH	switch-old.s	/^SWITCH:$/;"	l
+SWITCH	switch.s	/^SWITCH$/;"	l
+SWITCH	switch.s	/^SWITCH:$/;"	l
+SWITCH	swtch.s	/^SWITCH:$/;"	l
+SWITCH_H	switch.h	18;"	d
+SYNCHLIST_H	synchlist.h	12;"	d
+SYNCH_H	synch-sem.h	18;"	d
+SYNCH_H	synch-sleep.h	18;"	d
+SYNCH_H	synch.h	18;"	d
+SYSTEM_H	system.h	9;"	d
+SaveUserState	thread.cc	/^Thread::SaveUserState()$/;"	f	class:Thread
+Schedule	interrupt.cc	/^Interrupt::Schedule(VoidFunctionPtr handler, int arg, int fromNow, IntType type)$/;"	f	class:Interrupt
+Scheduler	scheduler.cc	/^Scheduler::Scheduler()$/;"	f	class:Scheduler
+Scheduler	scheduler.h	/^class Scheduler {$/;"	c
+Sema	synch-sem.h	/^    Semaphore* Sema; \/\/ use the semaphore to realize the lock$/;"	m	class:Lock
+Sema	synch-sem.h	/^    Semaphore* Sema;$/;"	m	class:Condition
+Sema	synch.h	/^    Semaphore* Sema; \/\/ use the semaphore to realize the lock$/;"	m	class:Lock
+Sema	synch.h	/^    Semaphore* Sema;$/;"	m	class:Condition
+Semaphore	synch-sem.cc	/^Semaphore::Semaphore(char* debugName, int initialValue)$/;"	f	class:Semaphore
+Semaphore	synch-sem.h	/^class Semaphore {$/;"	c
+Semaphore	synch-sleep.cc	/^Semaphore::Semaphore(char* debugName, int initialValue)$/;"	f	class:Semaphore
+Semaphore	synch-sleep.h	/^class Semaphore {$/;"	c
+Semaphore	synch.cc	/^Semaphore::Semaphore(char* debugName, int initialValue)$/;"	f	class:Semaphore
+Semaphore	synch.h	/^class Semaphore {$/;"	c
+SetLevel	interrupt.cc	/^Interrupt::SetLevel(IntStatus now)$/;"	f	class:Interrupt
+ShowList	dllist.cc	/^void DLList::ShowList(int type) { \/\/ show when insert$/;"	f	class:DLList
+ShowList	list.cc	/^void List::ShowList() {$/;"	f	class:List
+ShowList	synchlist.cc	/^void SynchList::ShowList() {$/;"	f	class:SynchList
+Signal	synch-sem.cc	/^void Condition::Signal(Lock* conditionLock) { \/\/ wakeup a thread in the blocked queue and let it added to the ready queue$/;"	f	class:Condition
+Signal	synch-sleep.cc	/^void Condition::Signal(Lock* conditionLock) { \/\/ wakeup a thread in the blocked queue and let it added to the ready queue$/;"	f	class:Condition
+Signal	synch.cc	/^void Condition::Signal(Lock* conditionLock) { \/\/ wakeup a thread in the blocked queue and let it added to the ready queue$/;"	f	class:Condition
+Sleep	thread.cc	/^Thread::Sleep ()$/;"	f	class:Thread
+SortedInsert	dllist.cc	/^void DLList::SortedInsert(void *item, int sortKey) {$/;"	f	class:DLList
+SortedInsert	list.cc	/^List::SortedInsert(void *item, int sortKey)$/;"	f	class:List
+SortedRemove	dllist.cc	/^void *DLList::SortedRemove(int sortKey) { \/\/ find the first elem that the key is equal to sortKey and remove it$/;"	f	class:DLList
+SortedRemove	list.cc	/^List::SortedRemove(int *keyPtr)$/;"	f	class:List
+StackAllocate	thread.cc	/^Thread::StackAllocate (VoidFunctionPtr func, int arg)$/;"	f	class:Thread
+StackSize	thread.h	56;"	d
+StartupPC	switch.c	/^	call	StartupPC,0$/;"	v
+StartupPC	switch.h	119;"	d
+StartupPC	switch.h	152;"	d
+StartupPC	switch.h	53;"	d
+StartupPC	switch.h	84;"	d
+StartupPCState	switch.h	125;"	d
+StartupPCState	switch.h	147;"	d
+StartupPCState	switch.h	60;"	d
+StartupPCState	switch.h	90;"	d
+SynchList	synchlist.cc	/^SynchList::SynchList()$/;"	f	class:SynchList
+SynchList	synchlist.h	/^class SynchList {$/;"	c
+SynchTest	threadtest.cc	/^void SynchTest(int which) {$/;"	f
+SystemMode	interrupt.h	/^enum MachineStatus {IdleMode, SystemMode, UserMode};$/;"	e	enum:MachineStatus
+THREAD_H	thread.h	38;"	d
+TRUE	bool.h	5;"	d
+Table	Table.cc	/^Table::Table(int size) {$/;"	f	class:Table
+Table	Table.h	/^class Table {$/;"	c
+TableSize	Table.h	/^    int TableSize;$/;"	m	class:Table
+TableTest	threadtest.cc	/^void TableTest(int which) {$/;"	f
+Thread	thread.cc	/^Thread::Thread(char* threadName)$/;"	f	class:Thread
+Thread	thread.h	/^class Thread {$/;"	c
+ThreadFinish	thread.cc	/^static void ThreadFinish()    { currentThread->Finish(); }$/;"	f	file:
+ThreadPrint	thread.cc	/^void ThreadPrint(int arg){ Thread *t = (Thread *)arg; t->Print(); }$/;"	f
+ThreadRoot	switch-old.s	/^ThreadRoot:$/;"	l
+ThreadRoot	switch.s	/^ThreadRoot$/;"	l
+ThreadRoot	switch.s	/^ThreadRoot:$/;"	l
+ThreadRoot	swtch.s	/^ThreadRoot:$/;"	l
+ThreadStatus	thread.h	/^enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED };$/;"	g
+ThreadTest	threadtest.cc	/^ThreadTest()$/;"	f
+TimerInt	interrupt.h	/^enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, $/;"	e	enum:IntType
+TimerInterruptHandler	system.cc	/^TimerInterruptHandler(int dummy)$/;"	f	file:
+UTILITY_H	utility.h	24;"	d
+UserMode	interrupt.h	/^enum MachineStatus {IdleMode, SystemMode, UserMode};$/;"	e	enum:MachineStatus
+V	synch-sem.cc	/^Semaphore::V()$/;"	f	class:Semaphore
+V	synch-sleep.cc	/^Semaphore::V()$/;"	f	class:Semaphore
+V	synch.cc	/^Semaphore::V()$/;"	f	class:Semaphore
+VoidFunctionPtr	utility.h	/^typedef void (*VoidFunctionPtr)(int arg); $/;"	t
+VoidNoArgFunctionPtr	utility.h	/^typedef void (*VoidNoArgFunctionPtr)(); $/;"	t
+Wait	synch-sem.cc	/^void Condition::Wait(Lock* conditionLock) {$/;"	f	class:Condition
+Wait	synch-sleep.cc	/^void Condition::Wait(Lock* conditionLock) {$/;"	f	class:Condition
+Wait	synch.cc	/^void Condition::Wait(Lock* conditionLock) {$/;"	f	class:Condition
+WhenDonePC	switch.c	/^	mov	WhenDonePC, %l2$/;"	v
+WhenDonePC	switch.h	118;"	d
+WhenDonePC	switch.h	151;"	d
+WhenDonePC	switch.h	52;"	d
+WhenDonePC	switch.h	83;"	d
+WhenDonePCState	switch.h	124;"	d
+WhenDonePCState	switch.h	146;"	d
+WhenDonePCState	switch.h	59;"	d
+WhenDonePCState	switch.h	89;"	d
+Write	BoundedBuffer.cc	/^void BoundedBuffer::Write(void* data, int size) { \/\/ write data to buffer and the data size is size$/;"	f	class:BoundedBuffer
+Yield	thread.cc	/^Thread::Yield ()$/;"	f	class:Thread
+YieldOnReturn	interrupt.cc	/^Interrupt::YieldOnReturn()$/;"	f	class:Interrupt
+_ANSI_STDARG_H_	stdarg.h	10;"	d
+_ASM	switch.c	119;"	d	file:
+_ASM	switch.s	/^#define _ASM$/;"	d
+_BSD_VA_LIST	stdarg.h	148;"	d
+_EAX	switch.h	132;"	d
+_EBP	switch.h	136;"	d
+_EBX	switch.h	133;"	d
+_ECX	switch.h	134;"	d
+_EDI	switch.h	138;"	d
+_EDX	switch.h	135;"	d
+_ESI	switch.h	137;"	d
+_ESP	switch.h	131;"	d
+_PC	switch.h	139;"	d
+_STDARG_H	stdarg.h	9;"	d
+_VA_LIST	stdarg.h	144;"	d
+_VA_LIST	stdarg.h	160;"	d
+_VA_LIST	stdarg.h	189;"	d
+_VA_LIST_	stdarg.h	157;"	d
+_VA_LIST_	stdarg.h	186;"	d
+_VA_LIST_DEFINED	stdarg.h	192;"	d
+_VA_LIST_T_H	stdarg.h	195;"	d
+__BOUNDEDBUFFER_H	BoundedBuffer.h	2;"	d
+__DLLIST_H	dllist.h	2;"	d
+__GNUC_VA_LIST	stdarg.h	66;"	d
+__HELLO_H	hello.h	2;"	d
+__NACHBOOL_H__	bool.h	2;"	d
+__TABLE_H	Table.h	2;"	d
+__VA_LIST	stdarg.h	165;"	d
+__gnuc_va_list	stdarg.h	/^typedef char *__gnuc_va_list;$/;"	t
+__gnuc_va_list	stdarg.h	/^typedef void *__gnuc_va_list;$/;"	t
+__need___va_list	stdarg.h	12;"	d
+__va_copy	stdarg.h	114;"	d
+__va_rounded_size	stdarg.h	82;"	d
+__va_rounded_size	stdarg.h	85;"	d
+_eax_save	switch.c	/^        movl    _eax_save,%ebx          # get the saved value of eax$/;"	v
+a0	switch.c	/^	move	a0, InitialArg$/;"	v
+a0	switch.c	46;"	d	file:
+a0	switch.s	/^#define a0      $4      \/* argument registers *\/$/;"	d
+a1	switch.c	47;"	d	file:
+a1	switch.s	/^#define a1      $5$/;"	d
+arg	interrupt.h	/^    int arg;                    \/\/ The argument to the function.$/;"	m	class:PendingInterrupt
+bb	threadtest.cc	/^BoundedBuffer *bb = new BoundedBuffer(20);$/;"	v
+blockNum	synch-sem.h	/^    int blockNum;$/;"	m	class:Condition
+blockNum	synch.h	/^    int blockNum;$/;"	m	class:Condition
+buffer	BoundedBuffer.h	/^    uchar *buffer;$/;"	m	class:BoundedBuffer
+cnt	Table.h	/^    int cnt;$/;"	m	class:Table
+copyright	copyright.h	/^static char *copyright = "Copyright (c) 1992-1993 The Regents of the University of California.  All rights reserved.";$/;"	v
+counter	switch.c	/^	stw  %rp, PC(%arg0)	;save program counter$/;"	v
+currentThread	system.cc	/^Thread *currentThread;			\/\/ the thread we are running now$/;"	v
+delItemFromList	dllist-driver.cc	/^void delItemFromList(int n, DLList *dllist) { \/\/ removes N items starting from the head of the list$/;"	f
+divRoundDown	utility.h	39;"	d
+divRoundUp	utility.h	40;"	d
+dllist	threadtest.cc	/^DLList *dllist = new DLList(); \/\/ the list that will be oprated in diffrent thread commonly$/;"	v
+dllistEmpty	dllist.h	/^        Condition *dllistEmpty;$/;"	m	class:DLList
+done	switch.c	/^	jal 	WhenDonePC	# when were done, call clean up procedure$/;"	v
+ebp	switch.c	/^        movl    %ebp,%esp$/;"	v
+ebp	switch.c	/^        movl    %ebp,_EBP(%eax)$/;"	v
+ebx	switch.c	/^        movl    %ebx,_EAX(%eax)         # store it$/;"	v
+ebx	switch.c	/^        movl    %ebx,_EBX(%eax)         # save registers$/;"	v
+ecx	switch.c	/^        movl    %ecx,_ECX(%eax)$/;"	v
+edi	switch.c	/^        movl    %edi,_EDI(%eax)$/;"	v
+edx	switch.c	/^        movl    %edx,_EDX(%eax)$/;"	v
+empty	BoundedBuffer.h	/^    Condition *empty; \/\/ ensure buffer not empty$/;"	m	class:BoundedBuffer
+enableFlags	utility.cc	/^static char *enableFlags = NULL; \/\/ controls which DEBUG messages are printed $/;"	v	file:
+esi	switch.c	/^        movl    %esi,_ESI(%eax)$/;"	v
+esp	switch.c	/^        movl    %esp,_ESP(%eax)         # save stack pointer$/;"	v
+fileSystem	system.cc	/^FileSystem  *fileSystem;$/;"	v
+first	dllist.h	/^        DLLElement *first; \/\/ head of the list, NULL if empty$/;"	m	class:DLList
+first	list.h	/^    ListElement *first;  	\/\/ Head of the list, NULL if list is empty$/;"	m	class:List
+fp	switch.c	/^	or	fp,z,z		# Clearing the frame pointer here$/;"	v
+fp	switch.c	/^	st	%fp, [%i0]$/;"	v
+fp	switch.c	57;"	d	file:
+fp	switch.s	/^#define fp      $30     \/* frame pointer *\/$/;"	d
+full	BoundedBuffer.h	/^    Condition *full; \/\/ ensure buffer not full$/;"	m	class:BoundedBuffer
+genItem2List	dllist-driver.cc	/^void genItem2List(int n, DLList *dllist) { \/\/ generate n random keys and the dllist points to the list$/;"	f
+getFirst	dllist.h	/^        DLLElement * getFirst() { return first; }$/;"	f	class:DLList
+getLevel	interrupt.h	/^    IntStatus getLevel() {return level;}\/\/ Return whether interrupts$/;"	f	class:Interrupt
+getName	synch-sem.h	/^    char* getName() { return (name); }$/;"	f	class:Condition
+getName	synch-sem.h	/^    char* getName() { return name; }	\/\/ debugging assist$/;"	f	class:Lock
+getName	synch-sem.h	/^    char* getName() { return name;}			\/\/ debugging assist$/;"	f	class:Semaphore
+getName	synch-sleep.h	/^    char* getName() { return (name); }$/;"	f	class:Condition
+getName	synch-sleep.h	/^    char* getName() { return name; }	\/\/ debugging assist$/;"	f	class:Lock
+getName	synch-sleep.h	/^    char* getName() { return name;}			\/\/ debugging assist$/;"	f	class:Semaphore
+getName	synch.h	/^    char* getName() { return (name); }$/;"	f	class:Condition
+getName	synch.h	/^    char* getName() { return name; }	\/\/ debugging assist$/;"	f	class:Lock
+getName	synch.h	/^    char* getName() { return name;}			\/\/ debugging assist$/;"	f	class:Semaphore
+getName	thread.h	/^        char* getName() { return (name); }$/;"	f	class:Thread
+getSize	Table.cc	/^int Table::getSize() {$/;"	f	class:Table
+getStatus	interrupt.h	/^    MachineStatus getStatus() { return status; } \/\/ idle, kernel, user$/;"	f	class:Interrupt
+getThreadName	threadtest.cc	/^getThreadName(int i) {$/;"	f
+handler	interrupt.h	/^    VoidFunctionPtr handler;    \/\/ The function (in the hardware device$/;"	m	class:PendingInterrupt
+head	BoundedBuffer.h	/^    int head; \/\/ pointer to the first place of buffer used$/;"	m	class:BoundedBuffer
+hello	hello.cc	/^void hello() {$/;"	f
+i0	switch.c	/^	st	%i0, [%i0+I0]$/;"	v
+i1	switch.c	/^	mov	%i1, %l0$/;"	v
+i1	switch.c	/^	st	%i1, [%i0+I1]$/;"	v
+i2	switch.c	/^	st	%i2, [%i0+I2]$/;"	v
+i3	switch.c	/^	st	%i3, [%i0+I3]$/;"	v
+i4	switch.c	/^	st	%i4, [%i0+I4]$/;"	v
+i5	switch.c	/^	st	%i5, [%i0+I5]$/;"	v
+i7	switch.c	/^	st	%i7, [%i0+I7]$/;"	v
+inHandler	interrupt.h	/^    bool inHandler;		\/\/ TRUE if we are running an interrupt handler$/;"	m	class:Interrupt
+intLevelNames	interrupt.cc	/^static char *intLevelNames[] = { "off", "on"};$/;"	v	file:
+intTypeNames	interrupt.cc	/^static char *intTypeNames[] = { "timer", "disk", "console write", $/;"	v	file:
+interrupt	system.cc	/^Interrupt *interrupt;			\/\/ interrupt status$/;"	v
+isHeldByCurrentThread	synch-sem.cc	/^bool Lock::isHeldByCurrentThread() { \/\/  return true if the current thread hold the lock$/;"	f	class:Lock
+isHeldByCurrentThread	synch-sleep.cc	/^bool Lock::isHeldByCurrentThread() { \/\/  return true if the current thread hold the lock$/;"	f	class:Lock
+isHeldByCurrentThread	synch.cc	/^bool Lock::isHeldByCurrentThread() { \/\/  return true if the current thread hold the lock$/;"	f	class:Lock
+item	dllist.h	/^        void *item; \/\/ pointer to item on the list$/;"	m	class:DLLElement
+item	list.h	/^     void *item; 	    	\/\/ pointer to item on the list$/;"	m	class:ListElement
+key	dllist.h	/^        int key; \/\/ priority, for a sorted list$/;"	m	class:DLLElement
+key	list.h	/^     int key;		    	\/\/ priority, for a sorted list$/;"	m	class:ListElement
+l0	switch.c	/^	call	%l0, 1	$/;"	v
+l1	switch.c	/^	mov	%l1, %o0   \/* Using delay slot to setup argument to InitialPC *\/$/;"	v
+l2	switch.c	/^	call	%l2, 0$/;"	v
+last	dllist.h	/^        DLLElement *last; \/\/ last element of the list, NULL if empty$/;"	m	class:DLList
+last	list.h	/^    ListElement *last;		\/\/ Last element of list$/;"	m	class:List
+ld	switch.c	/^	ld	[%l0+I0], %i0$/;"	v
+ld	switch.c	/^	ld	[%l0+I1], %i1$/;"	v
+ld	switch.c	/^	ld	[%l0+I2], %i2$/;"	v
+ld	switch.c	/^	ld	[%l0+I3], %i3$/;"	v
+ld	switch.c	/^	ld	[%l0+I4], %i4$/;"	v
+ld	switch.c	/^	ld	[%l0+I5], %i5$/;"	v
+ld	switch.c	/^	ld	[%l0+I7], %i7$/;"	v
+ld	switch.c	/^	ld	[%l0], %i6$/;"	v
+level	interrupt.h	/^    IntStatus level;		\/\/ are interrupts enabled or disabled?$/;"	m	class:Interrupt
+list	synchlist.h	/^    List *list;			\/\/ the unsynchronized list$/;"	m	class:SynchList
+listEmpty	synchlist.h	/^    Condition *listEmpty;	\/\/ wait in Remove if the list is empty$/;"	m	class:SynchList
+lock	BoundedBuffer.h	/^    Lock *lock;$/;"	m	class:BoundedBuffer
+lock	Table.h	/^    Lock* lock;$/;"	m	class:Table
+lock	dllist.h	/^        Lock *lock;$/;"	m	class:DLList
+lock	synchlist.h	/^    Lock *lock;			\/\/ enforce mutual exclusive access to the list$/;"	m	class:SynchList
+machine	system.cc	/^Machine *machine;	\/\/ user program memory and registers$/;"	v
+machineState	thread.h	/^        int machineState[MachineStateSize];  \/\/ all registers except for stackTop$/;"	m	class:Thread
+main	main.cc	/^main(int argc, char **argv)$/;"	f
+max	utility.h	36;"	d
+maxSize	BoundedBuffer.h	/^    int maxSize; \/\/ size of buffer$/;"	m	class:BoundedBuffer
+min	utility.h	35;"	d
+name	synch-sem.h	/^    char* name;				\/\/ for debugging$/;"	m	class:Lock
+name	synch-sem.h	/^    char* name;        \/\/ useful for debugging$/;"	m	class:Semaphore
+name	synch-sem.h	/^    char* name;$/;"	m	class:Condition
+name	synch-sleep.h	/^    char* name;				\/\/ for debugging$/;"	m	class:Lock
+name	synch-sleep.h	/^    char* name;        \/\/ useful for debugging$/;"	m	class:Semaphore
+name	synch-sleep.h	/^    char* name;$/;"	m	class:Condition
+name	synch.h	/^    char* name;				\/\/ for debugging$/;"	m	class:Lock
+name	synch.h	/^    char* name;        \/\/ useful for debugging$/;"	m	class:Semaphore
+name	synch.h	/^    char* name;$/;"	m	class:Condition
+name	thread.h	/^        char* name;$/;"	m	class:Thread
+next	dllist.h	/^        DLLElement *next; \/\/ next element on list$/;"	m	class:DLLElement
+next	list.h	/^     ListElement *next;		\/\/ next element on list, $/;"	m	class:ListElement
+oprnum	threadtest.cc	/^int oprnum = 2;$/;"	v
+pending	interrupt.h	/^    List *pending;		\/\/ the list of interrupts scheduled$/;"	m	class:Interrupt
+postOffice	system.cc	/^PostOffice *postOffice;$/;"	v
+prev	dllist.h	/^        DLLElement *prev; \/\/ previous element on list$/;"	m	class:DLLElement
+queue	synch-sem.h	/^    List *queue;       \/\/ threads waiting in P() for the value to be > 0$/;"	m	class:Semaphore
+queue	synch-sleep.h	/^    List *queue;       \/\/ threads waiting in P() for the value to be > 0$/;"	m	class:Semaphore
+queue	synch-sleep.h	/^    List* queue; \/\/  save the threads that are waiting$/;"	m	class:Lock
+queue	synch-sleep.h	/^    List* queue; \/\/ store suspended threads$/;"	m	class:Condition
+queue	synch.h	/^    List *queue;       \/\/ threads waiting in P() for the value to be > 0$/;"	m	class:Semaphore
+r10	switch.c	/^	stw  %r10, S7(%arg0)$/;"	v
+r11	switch.c	/^	stw  %r11, S8(%arg0)$/;"	v
+r12	switch.c	/^	stw  %r12, S9(%arg0)$/;"	v
+r13	switch.c	/^	stw  %r13, S10(%arg0)$/;"	v
+r14	switch.c	/^	stw  %r14, S11(%arg0)$/;"	v
+r15	switch.c	/^	stw  %r15, S12(%arg0)$/;"	v
+r16	switch.c	/^	stw  %r16, S13(%arg0)$/;"	v
+r17	switch.c	/^	stw  %r17, S14(%arg0)$/;"	v
+r18	switch.c	/^	stw  %r18, S15(%arg0)$/;"	v
+r3	switch.c	/^	stw  %r3, S0(%arg0)	;save callee-save registers$/;"	v
+r31	switch.c	/^	or   %r31, 0, %rp	;put return address in proper register$/;"	v
+r5	switch.c	/^	stw  %r5, S2(%arg0)$/;"	v
+r6	switch.c	/^	stw  %r6, S3(%arg0)$/;"	v
+r7	switch.c	/^	stw  %r7, S4(%arg0)$/;"	v
+r8	switch.c	/^	stw  %r8, S5(%arg0)$/;"	v
+r9	switch.c	/^	stw  %r9, S6(%arg0)$/;"	v
+ra	switch.c	58;"	d	file:
+ra	switch.s	/^#define ra      $31     \/* return address *\/$/;"	d
+readyList	scheduler.h	/^    List *readyList;  		\/\/ queue of threads that are ready to run,$/;"	m	class:Scheduler
+restore	switch.c	/^	restore$/;"	v
+rp	switch.c	/^	or   %r31, 0, %rp	;put return address in proper register$/;"	v
+rp	switch.c	/^	stw  %rp, PC(%arg0)	;save program counter$/;"	v
+s0	switch.c	48;"	d	file:
+s0	switch.s	/^#define s0      $16     \/* callee saved *\/$/;"	d
+s1	switch.c	49;"	d	file:
+s1	switch.s	/^#define s1      $17$/;"	d
+s2	switch.c	50;"	d	file:
+s2	switch.s	/^#define s2      $18$/;"	d
+s3	switch.c	51;"	d	file:
+s3	switch.s	/^#define s3      $19$/;"	d
+s4	switch.c	52;"	d	file:
+s4	switch.s	/^#define s4      $20$/;"	d
+s5	switch.c	53;"	d	file:
+s5	switch.s	/^#define s5      $21$/;"	d
+s6	switch.c	54;"	d	file:
+s6	switch.s	/^#define s6      $22$/;"	d
+s7	switch.c	55;"	d	file:
+s7	switch.s	/^#define s7      $23$/;"	d
+scheduler	system.cc	/^Scheduler *scheduler;			\/\/ the ready list$/;"	v
+seed	dllist-driver.cc	/^int seed;$/;"	v
+setFirst	dllist.h	/^        void setFirst(DLLElement *p) { first = p; }$/;"	f	class:DLList
+setStatus	interrupt.h	/^    void setStatus(MachineStatus st) { status = st; }$/;"	f	class:Interrupt
+setStatus	thread.h	/^        void setStatus(ThreadStatus st) { status = st; }$/;"	f	class:Thread
+slist	threadtest.cc	/^SynchList *slist = new SynchList();$/;"	v
+sp	switch.c	/^	sw	sp, SP(a0)		# save new stack pointer$/;"	v
+sp	switch.c	56;"	d	file:
+sp	switch.s	/^#define sp      $29     \/* stack pointer *\/$/;"	d
+space	thread.h	/^        AddrSpace *space;			\/\/ User code this thread is running.$/;"	m	class:Thread
+stack	thread.h	/^        int* stack; 	 		\/\/ Bottom of the stack $/;"	m	class:Thread
+stackTop	thread.h	/^        int* stackTop;			 \/\/ the current stack pointer$/;"	m	class:Thread
+state	synch-sleep.h	/^    bool state; \/\/ record the lock is locked or not$/;"	m	class:Lock
+stats	system.cc	/^Statistics *stats;			\/\/ performance metrics$/;"	v
+status	interrupt.h	/^    MachineStatus status;	\/\/ idle, kernel mode, user mode$/;"	m	class:Interrupt
+status	thread.h	/^        ThreadStatus status;		\/\/ ready, running or blocked$/;"	m	class:Thread
+synchDisk	system.cc	/^SynchDisk   *synchDisk;$/;"	v
+table	threadtest.cc	/^Table *table = new Table(5);$/;"	v
+tableBase	Table.h	/^    void** tableBase;$/;"	m	class:Table
+tableEmpty	Table.h	/^    Condition* tableEmpty;$/;"	m	class:Table
+tail	BoundedBuffer.h	/^    int tail; \/\/ pointer to the last place of buffer used$/;"	m	class:BoundedBuffer
+testData	threadtest.cc	/^int testData[100];$/;"	v
+testnum	threadtest.cc	/^int testnum = 1;$/;"	v
+threadHoldLock	synch-sem.h	/^    Thread* threadHoldLock; \/\/ the thread that hold the lock, only the thread can release the lock$/;"	m	class:Lock
+threadHoldLock	synch-sleep.h	/^    Thread* threadHoldLock; \/\/ the thread that hold the lock, only the thread can release the lock$/;"	m	class:Lock
+threadHoldLock	synch.h	/^    Thread* threadHoldLock; \/\/ the thread that hold the lock, only the thread can release the lock$/;"	m	class:Lock
+threadToBeDestroyed	system.cc	/^Thread *threadToBeDestroyed;  		\/\/ the thread that just finished$/;"	v
+threadnum	threadtest.cc	/^int threadnum = 2;$/;"	v
+timer	system.cc	/^Timer *timer;				\/\/ the hardware timer device,$/;"	v
+toDLListTest	threadtest.cc	/^toDLListTest(VoidFunctionPtr func) \/\/ VoidFunctionPtr is defined in utility.h   typedef void (*VoidFunctionPtr)(int arg)$/;"	f
+type	interrupt.h	/^    IntType type;		\/\/ for debugging$/;"	m	class:PendingInterrupt
+uchar	BoundedBuffer.h	4;"	d
+usedSize	BoundedBuffer.h	/^    int usedSize;$/;"	m	class:BoundedBuffer
+userRegisters	thread.h	/^        int userRegisters[NumTotalRegs];	\/\/ user-level CPU register state$/;"	m	class:Thread
+va_arg	stdarg.h	101;"	d
+va_arg	stdarg.h	106;"	d
+va_end	stdarg.h	92;"	d
+va_end	stdarg.h	94;"	d
+va_list	stdarg.h	/^typedef __gnuc_va_list va_list;$/;"	t
+va_start	stdarg.h	89;"	d
+value	synch-sem.h	/^    int value;         \/\/ semaphore value, always >= 0$/;"	m	class:Semaphore
+value	synch-sleep.h	/^    int value;         \/\/ semaphore value, always >= 0$/;"	m	class:Semaphore
+value	synch.h	/^    int value;         \/\/ semaphore value, always >= 0$/;"	m	class:Semaphore
+when	interrupt.h	/^    int when;			\/\/ When the interrupt is supposed to fire$/;"	m	class:PendingInterrupt
+yieldOnReturn	interrupt.h	/^    bool yieldOnReturn; 	\/\/ TRUE if we are to context switch$/;"	m	class:Interrupt
+yield_flag	threadtest.cc	/^bool yield_flag = false; \/\/ mark the thread can be yield or not$/;"	v
+z	switch.c	/^	or	fp,z,z		# Clearing the frame pointer here$/;"	v
+z	switch.c	45;"	d	file:
+z	switch.s	/^#define z       $0      \/* zero register *\/$/;"	d
+~BoundedBuffer	BoundedBuffer.cc	/^BoundedBuffer::~BoundedBuffer() {$/;"	f	class:BoundedBuffer
+~Condition	synch-sem.cc	/^Condition::~Condition() {$/;"	f	class:Condition
+~Condition	synch-sleep.cc	/^Condition::~Condition() {$/;"	f	class:Condition
+~Condition	synch.cc	/^Condition::~Condition() {$/;"	f	class:Condition
+~DLList	dllist.cc	/^DLList::~DLList() {$/;"	f	class:DLList
+~Interrupt	interrupt.cc	/^Interrupt::~Interrupt()$/;"	f	class:Interrupt
+~List	list.cc	/^List::~List()$/;"	f	class:List
+~Lock	synch-sem.cc	/^Lock::~Lock() {$/;"	f	class:Lock
+~Lock	synch-sleep.cc	/^Lock::~Lock() {$/;"	f	class:Lock
+~Lock	synch.cc	/^Lock::~Lock() {$/;"	f	class:Lock
+~Scheduler	scheduler.cc	/^Scheduler::~Scheduler()$/;"	f	class:Scheduler
+~Semaphore	synch-sem.cc	/^Semaphore::~Semaphore()$/;"	f	class:Semaphore
+~Semaphore	synch-sleep.cc	/^Semaphore::~Semaphore()$/;"	f	class:Semaphore
+~Semaphore	synch.cc	/^Semaphore::~Semaphore()$/;"	f	class:Semaphore
+~SynchList	synchlist.cc	/^SynchList::~SynchList()$/;"	f	class:SynchList
+~Table	Table.cc	/^Table::~Table() {$/;"	f	class:Table
+~Thread	thread.cc	/^Thread::~Thread()$/;"	f	class:Thread
